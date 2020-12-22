@@ -27,9 +27,4 @@ abstract class person
 }
 
 
-
-
-
-
-
 ?>
