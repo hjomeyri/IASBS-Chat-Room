@@ -9,7 +9,7 @@ $uiFamily_cv = "";
 $uiEmail_cv = "";
 $uiUserName_cv = "";
 
-if(isset($_POST['uiRegister']))
+if(isset($_POST['submit']))
 {
     $uiName_cv = $_POST['uiName'];
     $uiFamily_cv = $_POST['uiFamily'];
@@ -34,7 +34,7 @@ if(isset($_POST['uiRegister']))
 }
 
 
-include $ViewPath."signin.html";
+include $ViewPath."signup.html";
 
 // include $ShareFolderPath."footer.html";
 
