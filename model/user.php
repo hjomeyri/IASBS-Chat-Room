@@ -141,5 +141,21 @@ class message
         $this->text_message = $input_message;
     } 
 
+
+}
+
+
+class contact extends user
+{
+    private $contactList; // list
+    
+
+    function contactList() {
+        $this->contactList = array();
+        $paramTypes = "s";
+        $Parameters = array($this->getUsername());
+        $result = database::ExecuteQuery('getContactList', $paramTypes, $Parameters);
+        $contactList = $result->fetchAll();
+    }
 }
 ?>
