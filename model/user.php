@@ -5,6 +5,7 @@ abstract class person
 {
     public $name;
     public $family;
+    public $email;
 
     function getName()
     {
@@ -25,6 +26,17 @@ abstract class person
     {
         $this->family = $family;
     }
+
+    function getEmail()
+    {
+        return $this->email;
+    }
+
+    function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
 }
 
 class user extends person
@@ -63,6 +75,7 @@ class user extends person
             $row = $result->fetch_array();
             $this->setName($row["name"]);
             $this->setFamily($row["family"]);
+            $this->setEmail($row["email"]);
             return true;
         }
         return false;
@@ -70,14 +83,14 @@ class user extends person
 
     private function getUserAsaText()
     {
-        return $this->username.' '.$this->password.' '.$this->name.' '.$this->family.PHP_EOL;
+        return $this->username.' '.$this->password.' '.$this->name.' '.$this->family.' '.$this->email.PHP_EOL;
     }
 
     private function IsUsernameExist()
     {
         $paramTypes = "s";
         $Parameters = array($this->username);
-        $result = database::ExecuteQuery('IsUsernameExist', $paramTypes, $Parameters);
+        $result = database::ExecuteQuery('isUsernameExist', $paramTypes, $Parameters);
 
         if(mysqli_num_rows($result) > 0)
               return true;
@@ -87,10 +100,9 @@ class user extends person
     function Save()
     {
         if(!$this->IsUsernameExist()) {
-            $paramTypes = "ssss";
-            $Parameters = array($this->username, $this->password,
-                $this->name, $this->family);
-            database::ExecuteQuery('AddUser', $paramTypes, $Parameters);
+            $paramTypes = "sssss";
+            $Parameters = array($this->name, $this->family, $this->email, $this->username, $this->password);
+            database::ExecuteQuery('addUser', $paramTypes, $Parameters);
             return true;
         }
         return false;
