@@ -1,7 +1,7 @@
 <?php
 $server = 'localhost';
 $db_username = 'root';
-$db_password = '123456';
+$db_password = 'uJk6rm3zB26GuZcD';
 $db_name = 'users';
 
 $ViewPath = 'view/';
