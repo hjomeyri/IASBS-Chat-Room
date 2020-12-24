@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/signin.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
@@ -25,10 +25,17 @@
                        <label for="pass">Password</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" name="pass" id="pass" onkeypress="limitCharchters(50,'pass',event); allEnglishCodes(event)">
+                       <input class="input_c en" type="text" name="pass" id="pass">
                     </div>
                    
                 </div>
+				<div class="btn">
+                    <input class="submit"type="btn" name="submit" value="Sign in">
+                </div>
+				<div class="container signup">
+					<p>You don't have account?<a href="Signup.html">Sign up</a>.</p>
+				</div>
+				
             </fieldset>
         </form>
     </div>
