@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Singup.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+    <!-------------------content------------------->
+    <div class="content">
+        <form action="#" method="POST">
+            <fieldset>
+                <div class="field">
+                    <div class="caption">
+                       <label for="uiName">Name</label>
+                    </div>
+                    <div class="controls">
+                       <input class= "input_c en" type="text" name="uiName" id="uiName" onkeypress="limitCharchters(50, 'uiName',event);>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="caption">
+                       <label for="uiLastName">Family</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" name="uiLastName" id="uiLastName" onkeypress="limitCharchters(50, 'uiLastName',event);>
+                    </div>
+ 
+                </div>
+          
+                <div class="field">
+                    <div class="caption">
+                       <label for="email">Email</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" name="email" id="uiEmail" , onkeypress="validateEmail()">
+                    </div>
+                    <span class="error" id="uiEmail-error"></span>
+                </div>
+
+                <div class="field">
+                    <div class="caption">
+                       <label for="ssn">User Name</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" id="ssn">
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <div class="caption">
+                       <label for="pass">Password</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" name="pass" id="pass" onkeypress="limitCharchters(50,'pass',event); allEnglishCodes(event)">
+                    </div>
+                   
+                </div>
+
+
+                <div class="field">
+                    <div class="caption">
+                       <label for="confirmPass">Confirm Password</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" name="confirmPass" id="confirmPass">
+                    </div>
+                </div>
+				<div id="errors" class="errors">
+				
+				</div>
+                <div class="btn">
+                    <input class="submit"type="btn" name="submit" value="Register" onclick="check()">
+                </div>
+				
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script src="../js/Singup.js"></script>
+</html>
