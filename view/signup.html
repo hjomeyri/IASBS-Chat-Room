@@ -10,14 +10,14 @@
 <body>
     <!-------------------content------------------->
     <div class="content">
-        <form action="#" method="POST">
+        <form action="signin.php" method="POST">
             <fieldset>
                 <div class="field">
                     <div class="caption">
                        <label for="uiName">Name</label>
                     </div>
                     <div class="controls">
-                       <input class= "input_c en" type="text" name="uiName" id="uiName" onkeypress="limitCharchters(50, 'uiName',event);">
+                       <input class= "input_c en" type="text" name="uiName" id="uiName" onkeypress="limitCharchters(50, 'uiName',event);" value="<?php echo $uiName_cv; ?>">
                     </div>
                 </div>
                 <div class="field">
@@ -25,7 +25,7 @@
                        <label for="uiLastName">Family</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" name="uiLastName" id="uiLastName" onkeypress="limitCharchters(50, 'uiLastName',event);">
+                       <input class="input_c en" type="text" name="uiLastName" id="uiLastName" onkeypress="limitCharchters(50, 'uiLastName',event);" value="<?php echo $uiFamily_cv; ?>">
                     </div>
  
                 </div>
@@ -35,7 +35,7 @@
                        <label for="email">Email</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" name="email" id="uiEmail" , onkeypress="validateEmail()">
+                       <input class="input_c en" type="text" name="email" id="uiEmail" , onkeypress="validateEmail()" value="<?php echo $uiEmail_cv; ?>">
                     </div>
                     <span class="error" id="uiEmail-error"></span>
                 </div>
@@ -45,7 +45,7 @@
                        <label for="ssn">User Name</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" id="ssn">
+                       <input class="input_c en" type="text" id="ssn" value="<?php echo $uiUserName_cv; ?>">
                     </div>
                 </div>
 
