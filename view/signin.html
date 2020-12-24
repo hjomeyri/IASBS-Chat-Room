@@ -10,14 +10,14 @@
 <body>
     <!-------------------content------------------->
     <div class="content">
-        <form action="#" method="POST">
+        <form action="index.php" method="POST">
             <fieldset>
                 <div class="field">
                     <div class="caption">
                        <label for="ssn">User Name</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" id="ssn">
+                       <input class="input_c en" type="text" id="ssn"  name="uiUsername">
                     </div>
                 </div>
                 <div class="field">
@@ -25,12 +25,12 @@
                        <label for="pass">Password</label>
                     </div>
                     <div class="controls">
-                       <input class="input_c en" type="text" name="pass" id="pass">
+                       <input class="input_c en" type="text" name="pass" id="pass" name="uiPassword">
                     </div>
                    
                 </div>
 				<div class="btn">
-                    <input class="submit"type="btn" name="submit" value="Sign in">
+                    <input class="submit"type="btn" name="uiLogin" value="Sign in">
                 </div>
 				<div class="container signup">
 					<p>You don't have account?<a href="Signup.html">Sign up</a>.</p>

@@ -1,7 +1,7 @@
 <?php
 require "config.php";
 require "model/user.php";
-include $ShareFolderPath."header.html";
+// include $ShareFolderPath."header.html";
 
 $Message = '';
 $uiName_cv = "";
@@ -36,7 +36,7 @@ if(isset($_POST['uiRegister']))
 
 include $ViewPath."signin.html";
 
-include $ShareFolderPath."footer.html";
+// include $ShareFolderPath."footer.html";
 
 
 function validation()
