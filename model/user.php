@@ -109,4 +109,37 @@ class user extends person
     }
 }
 
+class message
+{
+    private $from_user;
+    private $to_user;
+    private $text_message;
+    private $time_status;
+
+    function getFromUser()
+    {
+        return $this->from_user;
+    }
+
+    function getToUser()
+    {
+        return $this->to_user;
+    }
+
+    function getTextMessage()
+    {
+        return $this->text_message;
+    }
+
+    function getTimeStatus()
+    {
+        return $this->time_status;
+    }
+
+    function setMessage($input_message)
+    {
+        $this->text_message = $input_message;
+    } 
+
+}
 ?>

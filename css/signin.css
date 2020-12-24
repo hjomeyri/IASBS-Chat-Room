@@ -47,7 +47,7 @@ fieldset{
    
 }
 .caption label {
-    font-family: f1;
+    
     font-size: 14px;
     font-weight: 500;
 
@@ -64,6 +64,7 @@ fieldset{
     font-size: 12px;
     
 }
+
 .f2fa_ {
     font-family: f2fa;
     font-size: 12px;
@@ -80,6 +81,12 @@ fieldset{
     text-align:left;
 }
 
+::-webkit-input-placeholder { 
+    font-family: f2;
+}
+select{
+    font-family: f2;
+}
 
 
 
@@ -102,6 +109,6 @@ fieldset{
 	color: red;
 	
 }
-.signin {
+.signup {
   text-align: center;
 }
