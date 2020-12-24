@@ -6,13 +6,15 @@ include $ShareFolderPath."header.html";
 $Message = '';
 $uiName_cv = "";
 $uiFamily_cv = "";
-$uiUsername_cv = "";
+$uiEmail_cv = "";
+$uiUserName_cv = "";
 
 if(isset($_POST['uiRegister']))
 {
     $uiName_cv = $_POST['uiName'];
     $uiFamily_cv = $_POST['uiFamily'];
     $uiUsername_cv = $_POST['uiUsername'];
+    $uiEmail_cv = $_POST["uiEamil"];
 
     $validationMessage = validation();
     if($validationMessage == "") {
@@ -21,6 +23,7 @@ if(isset($_POST['uiRegister']))
         $u->setFamily($_POST['uiFamily']);
         $u->setUsername($_POST['uiUsername']);
         $u->setPassword($_POST['uiPassword']);
+        $u->setEmail($_POST["uiEmail"]);
         if($u->Save())
             $Message = 'You have successfully registed.';
         else
@@ -31,7 +34,7 @@ if(isset($_POST['uiRegister']))
 }
 
 
-include $ViewPath."register.html";
+include $ViewPath."signin.html";
 
 include $ShareFolderPath."footer.html";
 
