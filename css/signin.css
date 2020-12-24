@@ -80,16 +80,6 @@ fieldset{
     direction: ltr;
     text-align:left;
 }
-
-::-webkit-input-placeholder { 
-    font-family: f2;
-}
-select{
-    font-family: f2;
-}
-
-
-
 .submit {
     width: 100%;
     height: 30px;
