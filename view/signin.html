@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/signin.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<body>
+    <!-------------------content------------------->
+    <div class="content">
+        <form action="index.php" method="POST">
+            <fieldset>
+                <div class="field">
+                    <div class="caption">
+                       <label for="Username">User Name</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" id="Username"  name="uiUsername">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="caption">
+                       <label for="pass">Password</label>
+                    </div>
+                    <div class="controls">
+                       <input class="input_c en" type="text" name="pass" id="pass" name="uiPassword">
+                    </div>
+                   
+                </div>
+				<div class="btn">
+                    <input class="submit"type="btn" name="uiLogin" value="Sign in">
+                </div>
+				<div class="container signup">
+					<p>You don't have account?<a href="signup.php">Sign up</a>.</p>
+				</div>
+				
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
