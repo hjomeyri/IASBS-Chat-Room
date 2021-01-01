@@ -90,7 +90,7 @@ button:hover
 {
 	font-weight:bold;
 }
-@media (max-width: 800px)
+@media (max-width: 600px)
 {
 	.Register, .Login, .Content
 	{
