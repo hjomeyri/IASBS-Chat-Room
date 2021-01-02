@@ -1,7 +1,7 @@
 <?php
 require "config.php";
-require "modeluser.php";
-include "index.html";
+require "model/user.php";
+include "loginRegister.html";
 
 
 $Message = '';
