@@ -2,7 +2,7 @@
 session_start();
 unset($_REQUEST['USER']);
 require "model/user.php";
-include "index.html";
+include "loginRegister.html";
 $Message = '';
 if(isset($_POST['uiLogin']))
 {
