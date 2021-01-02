@@ -15,38 +15,38 @@
       <div class="Content">
         <div class="Login">
           <h1>Log In</h1>
-          <form action="#">
+          <form action="Login.php" method="post">
             <div class="formInput">
               <i class="material-icons"> person </i>
-              <input class="inputFeild" type="text" placeholder="Username"/>
+              <input class="inputFeild" type="text" placeholder="Username" id = "uiUsername" required/>
             </div>
             <div class="formInput">
               <i class="material-icons">password</i>
-              <input class="inputFeild" type="password" placeholder="Password"/>
+              <input class="inputFeild" type="password" placeholder="Password" id="uiPassword" required/>
             </div>
-            <button>Sign In</button>
+            <button id="uiLogin">Sign In</button>
           </form>
         </div>
         <div class="Register">
           <h1>Register</h1>
-          <form action="#">
+          <form action="Register.php" method="post">
             <div class="formInput">
               <i class="material-icons">email</i>
-              <input class="inputFeild" type="text" placeholder="Email">
+              <input class="inputFeild" type="text" placeholder="Phone Number with 0" id = "PhoneNumber" required/>
             </div>
             <div class="formInput">
               <i class="material-icons">person</i>
-              <input class="inputFeild" type="text" placeholder="UserName">
+              <input class="inputFeild" type="text" placeholder="UserName" id="UserName" required/>
             </div>
             <div class="formInput">
               <i class="material-icons">lock</i>
-              <input class="inputFeild" type="password" placeholder="Password">
+              <input class="inputFeild" type="password" placeholder="Password" id="Password" required/>
             </div>
             <div class="formInput">
               <i class="material-icons">lock</i>
-              <input class="inputFeild" type="password" placeholder="Confirm Password">
+              <input class="inputFeild" type="password" placeholder="Confirm Password" id="Conf_Pass" required/>
             </div>
-            <button>Sign Up</button>
+            <button id="Register">Sign Up</button>
           </form>
         </div>
       </div>
