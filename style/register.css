@@ -1,0 +1,22 @@
+.Register {
+  width: 40%;
+  height: auto;
+  position: relative;
+  left: 25%;
+  top: 100px;
+  border: solid rgba(145, 145, 145, 0.445) 2px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .Register {
+    width: 50%;
+    position: relative;
+    height: auto;
+    left: 25%;
+    top: 50px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+}
