@@ -1,8 +1,8 @@
 <?php
 require "config.php";
-require "model/user.php";
-include "loginRegister.html";
-
+require $ModelPath."user.php";
+include $SharedViewPath."header.html";
+include $ViewPath."register.html";
 
 $Message = '';
 $Username = "";
@@ -32,10 +32,10 @@ if(isset($_POST['Register']))
         {
             $Message =  'The username already exists. Please use a different.';
         }
-        else
-        {
-            $Message = $Validation_Message;
-        }
+    }
+    else
+    {
+        $Message = $Validation_Message;
     }
 }
 
@@ -61,4 +61,7 @@ function validation()
 
     return $Message ;
 }
+
+include $SharedViewPath."footer.html";
+
 ?>
