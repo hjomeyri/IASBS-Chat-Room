@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>IASBS Chat Room</title>
+    <link rel="shortcut icon" href="images/logo_smal.PNG">
+    <link rel="stylesheet"  type="text/css" href="style/shared.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    if (basename($_SERVER['PHP_SELF']) == 'index.php' ||
+    basename($_SERVER['PHP_SELF']) == 'logIn.php')
+        echo '<link rel="stylesheet" href="style/logIn.css" />';
+    if (basename($_SERVER['PHP_SELF']) == 'register.php')
+        echo '<link rel="stylesheet" href="style/register.css" />';
+    else
+        echo '<link rel="stylesheet" href="style/chatRoom.css" />';
+    ?>
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.PNG" alt="chat room logo" class="logo">
+    </div>
