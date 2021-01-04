@@ -1,8 +1,11 @@
 <?php
 session_start();
-unset($_REQUEST['USER']);
-require "model/user.php";
-include "loginRegister.html";
+unset($_SESSION['USER']);
+require "config.php";
+require $ModelPath."user.php";
+include $SharedViewPath."header.html";
+include $ViewPath."logIn.html";
+
 $Message = '';
 if(isset($_POST['uiLogin']))
 {
@@ -19,4 +22,7 @@ if(isset($_POST['uiLogin']))
     $Message = 'Invalid username or password.';
 }
 
+include $SharedViewPath."footer.html";
+
 ?>
+
